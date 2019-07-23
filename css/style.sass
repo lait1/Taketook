@@ -1,6 +1,6 @@
 
 body
-  background: #eeffbe
+  background: #fff
   font-family: 'Montserrat', sans-serif
 .wrap
   width: 1140px
@@ -50,7 +50,6 @@ body
   height: 840px
   display: flex
   align-items: center
-  &__wrap
   &__title
     font-size: 40px
     line-height: 49px
@@ -60,15 +59,184 @@ body
   &__stock
     width: 224px
     height: 80px
-    background: #FF1B63
+    background: #FF1B63 url("../imgs/percent.png") no-repeat center right
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1)
     border-radius: 5px
     font-size: 20px
-    line-height: 151.16%
     color: #ffffff
+    position: relative
+    text-indent: 20px
+    &-text
+      float: left
+      margin-top: 10px
     &-price
       font-weight: 800
       font-size: 35px
-      line-height: 151.16%
       color: #FFFFFF
+      float: left
+    &:after
+      content: ""
+      position: absolute
+      left: 120px
+      top: 80px
+      border: 15px solid transparent
+      border-top: 10px solid #FF1B63
+      clear: both
+  &__booking
+    text-align: center
+    width: 304px
+    height: 68px
+    border: 3px solid #FFFFFF
+    box-sizing: border-box
+    border-radius: 3px
+    margin-top: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #FFFFFF
+    font-size: 18px
+    line-height: 22px
+    font-weight: 900
+    text-decoration: none
+    &:hover
+      box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25), 0 4px 70px rgba(255, 255, 255, 0.7)
+.main-content
+  margin-top: 70px
+  display: flex
+  justify-content: space-between
+  &__info
+    width: 500px
+    color: #37373F
+    &-title
+      font-weight: 500
+      font-size: 40px
+      margin-top: 0
+      margin-bottom: 15px
+    &-desc
+      font-size: 18px
+      line-height: 26px
+    &-profit
+      margin-top: 25px
+      display: flex
+      flex-direction: column
+    &-icon
+      height: 42px
+      padding-left: 50px
+      line-height: 40px
+    .itm1
+      background: url(../imgs/icon-o.svg) no-repeat center left
+    .itm2
+      background: url(../imgs/icon-foto.svg) no-repeat center left
+    .itm3
+      background: url(../imgs/icon-piece.svg) no-repeat center left
+    .itm4
+      background: url(../imgs/icon-msg.svg) no-repeat center left
+.rating
+  background: url(../imgs/icon-price.svg) no-repeat center left
+  padding-left: 50px
+  padding-top: 30px
+  padding-bottom: 30px
+  font-size: 18px
+  line-height: 26px
+  color: #37373f
+  margin-top: 40px
+  border-top: 0.5px solid #C7C7C7
+  border-bottom: 0.5px solid #C7C7C7
+  display: inline-block
+  &__feed-stars
+    display: inline-block
+    color: #C94042
+    font-size: 1.1rem
+    font-weight: 700
+    height: 2rem
+    line-height: 2rem
+    margin-left: 10px
+  &__star
+    display: inline-block
+    font-family: FontAwesome
+    font-style: normal
+    &:before
+      content: "\f005"
+.foto-content
+  &__title
+    margin: 30px 0
+    font-weight: 500
+    font-size: 20px
+    line-height: 29px
+    color: #37373F
+  &__gallery
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &-image
+      margin-bottom: 10px
+  &__show
+    padding: 25px
+    text-align: center
+    &-link
+      font-weight: 500
+      font-size: 17px
+      line-height: 25px
+      color: #5286EC
+      text-decoration: none
+      &:after, &:before
+        content: '\f078'
+        font-family: FontAwesome
+        font-style: normal
+        font-size: 0.8rem
+        color: #C7C7C7
+        margin: 0 10px
+.about-organizer
+  border-top: 0.5px solid #C7C7C7
+  border-bottom: 0.5px solid #C7C7C7
+  display: flex
+  justify-content: space-between
+  color: #37373F
+  &__info
+    width: 580px
+  &__title
+    font-weight: 500
+    font-size: 18px
+    line-height: 26px
+    margin-top: 35px
+  &__desc
+    font-size: 16px
+    line-height: 24px
+    p
+      margin-bottom: 10px
+      margin-top: 15px
+  &__link
+    font-weight: 500
+    font-size: 16px
+    line-height: 23px
+    color: #5286EC
+    text-decoration: none
+    &:after
+      content: '\f078'
+      font-family: FontAwesome
+      font-style: normal
+      font-size: 0.8rem
+      color: #C7C7C7
+      margin: 0 10px
+  &__user
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin-top: 65px
+    margin-right: 115px
+    width: 290px
+    position: relative
+    &-profession
+      font-size: 14px
+      line-height: 40px
+    &-link
+      font-size: 14px
+      line-height: 21px
+      color: #5286EC
+      text-decoration: none
+    &-like
+      position: absolute
+      top: 0
+      right: 0
 
