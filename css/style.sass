@@ -131,6 +131,11 @@ body
       background: url(../imgs/icon-piece.svg) no-repeat center left
     .itm4
       background: url(../imgs/icon-msg.svg) no-repeat center left
+  .rating
+    border-top: 0.5px solid #C7C7C7
+    border-bottom: 0.5px solid #C7C7C7
+    margin-top: 40px
+    width: 100%
 .rating
   background: url(../imgs/icon-price.svg) no-repeat center left
   padding-left: 50px
@@ -139,9 +144,6 @@ body
   font-size: 18px
   line-height: 26px
   color: #37373f
-  margin-top: 40px
-  border-top: 0.5px solid #C7C7C7
-  border-bottom: 0.5px solid #C7C7C7
   display: inline-block
   &__feed-stars
     display: inline-block
@@ -153,7 +155,7 @@ body
     margin-left: 10px
   &__star
     display: inline-block
-    font-family: FontAwesome
+    font-family: FontAwesome, sans-serif
     font-style: normal
     &:before
       content: "\f005"
@@ -181,7 +183,7 @@ body
       text-decoration: none
       &:after, &:before
         content: '\f078'
-        font-family: FontAwesome
+        font-family: FontAwesome, sans-serif
         font-style: normal
         font-size: 0.8rem
         color: #C7C7C7
@@ -194,6 +196,7 @@ body
   color: #37373F
   &__info
     width: 580px
+    padding-bottom: 50px
   &__title
     font-weight: 500
     font-size: 18px
@@ -213,7 +216,7 @@ body
     text-decoration: none
     &:after
       content: '\f078'
-      font-family: FontAwesome
+      font-family: FontAwesome, sans-serif
       font-style: normal
       font-size: 0.8rem
       color: #C7C7C7
@@ -239,4 +242,155 @@ body
       position: absolute
       top: 0
       right: 0
-
+.time-working
+  margin-top: 50px
+  &__title
+    font-weight: 500
+    font-size: 20px
+    line-height: 29px
+    color: #37373F
+    margin-bottom: 30px
+  &__timetable
+    padding-top: 30px
+    font-size: 18px
+    line-height: 26px
+    border: 1px solid #C7C7C7
+    box-sizing: border-box
+    width: 770px
+    &-now
+      margin-bottom: 20px
+      display: flex
+      align-items: center
+      padding: 0 30px
+    &-today
+      margin-right: 15px
+      span
+        font-weight: 500
+    &-calendar
+      background: url("../imgs/icon-calendar.svg")
+      height: 35px
+      width: 35px
+      display: inline-block
+    &-row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 20px 30px
+      border-top: 0.5px solid #C7C7C7
+    &-info
+      display: flex
+      flex-direction: column
+    &-price
+      margin: 7px 0
+      font-weight: 600
+    &-bottom
+      font-weight: 500
+      font-size: 14px
+      line-height: 17px
+      color: #C94042
+      padding: 16px 32px
+      text-decoration: none
+      border: 2px solid #C94042
+      box-sizing: border-box
+      border-radius: 3px
+  .rating
+    margin-left: 30px
+.map
+  background: url("../imgs/bg-map.jpg") no-repeat
+  background-size: cover
+  height: 509px
+  margin-top: 80px
+.maps
+  position: relative
+  &__info
+    background: #FFFFFF
+    border: 1px solid #C7C7C7
+    box-sizing: border-box
+    position: absolute
+    width: 420px
+    height: 469px
+    top: 40px
+    padding: 40px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    &-row
+      height: 61px
+      padding-left: 80px
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      font-size: 18px
+      color: #37373F
+    .itm1
+      background: url(../imgs/icon-1.svg) no-repeat center left
+    .itm2
+      background: url(../imgs/icon-2.svg) no-repeat center left
+    .itm3
+      background: url(../imgs/icon-3.svg) no-repeat center left
+    .user
+      background: url(../imgs/avatar.png) no-repeat center left
+      background-size: contain
+    &-question
+      font-weight: 500
+      line-height: 27px
+    &-profession
+      font-size: 16px
+      line-height: 24px
+    &-link
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+      color: #5286EC
+      text-decoration: none
+.comment
+  margin-top: 120px
+  &__title
+    font-weight: 500
+    font-size: 20px
+    line-height: 29px
+  &__row
+    padding: 30px 0
+    width: 630px
+    display: flex
+  &__img
+    width: 101px
+    height: 101px
+  &__info
+    border-bottom: 0.5px solid #C7C7C7
+    margin-left: 20px
+    &-username
+      font-weight: 500
+      font-size: 18px
+      line-height: 22px
+      margin: 10px 0
+    &-profession
+      font-size: 14px
+      line-height: 21px
+    &-text
+      font-size: 16px
+      line-height: 24px
+    &-date
+      font-size: 14px
+      line-height: 21px
+      color: #B3B3B3
+      margin: 25px 0
+  &__evaluation
+    display: flex
+    justify-content: space-between
+    margin: 10px 0
+    &-stars
+      color: #C94042
+      font-size: 1.1rem
+      font-weight: 700
+    &-text
+      font-size: 14px
+      line-height: 21px
+      color: #B3B3B3
+      &:before
+        content: "\f00c"
+        font-family: FontAwesome, sans-serif
+        font-style: normal
+        font-size: 1rem
+        color: #6AAD4A
+        margin-right: 5px
