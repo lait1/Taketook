@@ -13,17 +13,7 @@ body
     flex-direction: row
     justify-content: flex-start
     align-items: center
-  &__link
-    font-style: normal
-    font-weight: 600
-    font-size: 21px
-    line-height: 26px
-    text-transform: uppercase
-    text-decoration: none
-    letter-spacing: 0.1em
-    color: #000
-    &-red
-      color: #c94042
+
   &__button-order
     margin-left: auto
     width: 165px
@@ -44,6 +34,17 @@ body
     color: #000
     &-text
       color: #B3B3B3
+.logo__link
+  font-style: normal
+  font-weight: 600
+  font-size: 21px
+  line-height: 26px
+  text-transform: uppercase
+  text-decoration: none
+  letter-spacing: 0.1em
+  color: #000
+  &-red
+    color: #c94042
 .front-baner
   background: url("../imgs/bg-front.png") no-repeat center
   background-size: cover
@@ -172,22 +173,22 @@ body
     justify-content: space-between
     &-image
       margin-bottom: 10px
-  &__show
-    padding: 25px
-    text-align: center
-    &-link
-      font-weight: 500
-      font-size: 17px
-      line-height: 25px
-      color: #5286EC
-      text-decoration: none
-      &:after, &:before
-        content: '\f078'
-        font-family: FontAwesome, sans-serif
-        font-style: normal
-        font-size: 0.8rem
-        color: #C7C7C7
-        margin: 0 10px
+.show__all
+  padding: 25px
+  text-align: center
+  &-link
+    font-weight: 500
+    font-size: 17px
+    line-height: 25px
+    color: #5286EC
+    text-decoration: none
+    &:after, &:before
+      content: '\f078'
+      font-family: FontAwesome, sans-serif
+      font-style: normal
+      font-size: 0.8rem
+      color: #C7C7C7
+      margin: 0 10px
 .about-organizer
   border-top: 0.5px solid #C7C7C7
   border-bottom: 0.5px solid #C7C7C7
@@ -394,3 +395,61 @@ body
         font-size: 1rem
         color: #6AAD4A
         margin-right: 5px
+  &__show
+    text-align: center
+    &-all
+      font-weight: 500
+      font-size: 17px
+      line-height: 25px
+      color: #5286EC
+.footer
+  height: 100px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo
+    margin-left: 70px
+  .social
+    display: flex
+    &__icon
+      height: 25px
+      width: 25px
+      background-size: contain
+      margin-right: 30px
+    .vk
+      background: url("../imgs/vk.svg") no-repeat center
+    .fb
+      background: url("../imgs/Facebook.svg") no-repeat center
+    .in
+      background: url("../imgs/Instragram.svg") no-repeat center
+  .ru__en
+    font-size: 15px
+    line-height: 26px
+    text-decoration: none
+    color: #37373F
+    &:after
+      content: '\f078'
+      font-family: FontAwesome, sans-serif
+      font-style: normal
+      font-size: 0.8rem
+      color: #C7C7C7
+.copyright
+  height: 77px
+  background: #FAF9F8
+  &__wrap
+    margin: 0 auto
+    width: 1140px
+    height: 100%
+    display: flex
+    align-items: center
+    text-align: center
+  &__banks
+    padding-left: 70px
+    img
+      margin-right: 20px
+  &__text
+    color: #B3B3B3
+    font-size: 14px
+    line-height: 17px
+    margin-left: 270px
+
